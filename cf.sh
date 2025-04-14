@@ -9,8 +9,8 @@ apt install jq curl -y
 sub=$(</dev/urandom tr -dc a-z | head -c4)
 DOMAIN=stvpn.app
 SUB_DOMAIN=${sub}vip.stvpn.app
-CF_ID=tazzpyns@gmail.com
-CF_KEY=1ff2e2bfc5f3341e1e7a70ed2c1a333841a8b
+CF_ID=dedenirwansyah90@gmail.com
+CF_KEY=2affde1c2638841171d852fd8c60987f57c73
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."
