@@ -799,7 +799,7 @@ function menu(){
 clear
 print_install "Memasang Menu Packet"
 wget ${REPO}Cdy/menu.zip
-7z x -pHeyHeyMauDecryptYaAwokawok menu.zip
+7z x menu.zip
 chmod +x menu/*
 mv menu/* /usr/local/sbin
 rm -rf menu
@@ -814,7 +814,7 @@ if [ -f ~/.bashrc ]; then
 fi
 fi
 mesg n || true
-welcome
+menu
 EOF
 cat >/etc/cron.d/log_clear <<-END
 		8 0 * * * root /usr/local/bin/log_clear
