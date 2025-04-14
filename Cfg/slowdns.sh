@@ -8,9 +8,9 @@ FONT="\033[0m"
 GREENBG="\033[42;37m"
 REDBG="\033[41;37m"
 NC='\e[0m'
-REPOS="https://raw.githubusercontent.com/Dekdoo12/autoscript/main/"
+REPOS="https://raw.githubusercontent.com/rasi1982/hokage/refs/heads/main/"
 ns_domain_cloudflare() {
-	DOMAIN="xdg-boost.my.id"
+	DOMAIN="profesorhokage.my.id"
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 	echo -e "           Masukan Subdomain              "
@@ -20,10 +20,10 @@ ns_domain_cloudflare() {
 	if [ -z $SUB ]; then
     exit
     else
-	SUB_DOMAIN=${SUB}."xdg-boost.my.id"
+	SUB_DOMAIN=${SUB}."profesorhokage.my.id"
 	NS_DOMAIN=dns.${SUB_DOMAIN}
-	CF_ID=ziexyuan@gmail.com
-        CF_KEY=defec9840c857888b6d1986354d45d617c83a
+	CF_ID=dedenirwansyah90@gmail.com
+        CF_KEY=2affde1c2638841171d852fd8c60987f57c73
 	set -euo pipefail
 	IP=$(wget -qO- ipinfo.io/ip)
 	echo "Updating DNS NS for ${NS_DOMAIN}..."
