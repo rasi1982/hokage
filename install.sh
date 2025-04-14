@@ -22,8 +22,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="5109603347"
-KEY="6206327239:AAFNfjFfSJh6cYHKiZZkvbVqJYEJ7OlHlgY"
+CHATID="1469244768"
+KEY="7534957646:AAGc_m_wAgCcwkUaCn0sPNFvRrnfBi_2Ez4"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -32,7 +32,7 @@ clear && clear && clear
 clear;clear;clear
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To FranataSTORE Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To Hokage Legend Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
 echo -e "         Auther : ${green} Tunneling VVIP ${NC}${YELLOW}(${NC} ${green}FranataSTORE ${NC}${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
@@ -78,7 +78,7 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
-izinsc="https://nata.serv00.net/license/v1.8/vip"
+izinsc="https://raw.githubusercontent.com/rasi1982/hokage/refs/heads/main/ijin"
 rm -f /usr/bin/user
 username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
@@ -108,7 +108,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://nata.serv00.net/v1.8/"
+REPO="https://raw.githubusercontent.com/rasi1982/hokage/refs/heads/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -265,7 +265,7 @@ echo $nama > /etc/xray/username
 fi
 echo ""
 elif [[ $host == "2" ]]; then
-wget https://raw.githubusercontent.com/SETANTAZVPN/sc/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://github.com/rasi1982/hokage/raw/refs/heads/main/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
@@ -290,7 +290,7 @@ TEXT="
 <code>EXP SC : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"Website","url":"https://tunneling.biz.id"},{"text":"Grup","url":"https://t.me/@FranataaSTORE"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"Website","url":"www.profesorhokage.my.id"},{"text":"Grup","url":"https://t.me/hokagelegend1"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
@@ -452,7 +452,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service limit Quota"
-wget raw.githubusercontent.com/aripTaz/autoscript/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
+wget raw.githubusercontent.com/rasi1982/hokage/refs/heads/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}Fls/limit-ip"
 chmod +x /usr/bin/*
