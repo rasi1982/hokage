@@ -65,15 +65,15 @@ setup_dnstt() {
 	cd
 	mkdir -p /etc/slowdns
 	cd /etc/slowdns
-	wget -O dnstt-server "${REPOS}slowdns/dnstt-server" >/dev/null 2>&1
+	wget -O dnstt-server "${REPOS}Fls/dnstt-server" >/dev/null 2>&1
 	chmod +x dnstt-server >/dev/null 2>&1
-	wget -O dnstt-client "${REPOS}slowdns/dnstt-client" >/dev/null 2>&1
+	wget -O dnstt-client "${REPOS}Fls/dnstt-client" >/dev/null 2>&1
 	chmod +x dnstt-client >/dev/null 2>&1
 	./dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
 	chmod +x *
 	cd
-	wget -O /etc/systemd/system/client.service "${REPOS}slowdns/client" >/dev/null 2>&1
-	wget -O /etc/systemd/system/server.service "${REPOS}slowdns/server" >/dev/null 2>&1
+	wget -O /etc/systemd/system/client.service "${REPOS}Fls/client" >/dev/null 2>&1
+	wget -O /etc/systemd/system/server.service "${REPOS}Fls/server" >/dev/null 2>&1
 	sed -i "s/xxxx/$NS_DOMAIN/g" /etc/systemd/system/client.service 
 	sed -i "s/xxxx/$NS_DOMAIN/g" /etc/systemd/system/server.service 
 	systemctl daemon-reload
