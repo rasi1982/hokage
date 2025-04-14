@@ -49,12 +49,12 @@ apt install jq curl -y
 clear
 
 read -rp "Sub Domain (Contoh: DevsTn): " sub
-DOMAIN=profesorhokage.my.id
+DOMAIN=rosicenter5.my.id
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.profesorhokage.my.id
-CF_ID=dedenirwansyah90@gmail.com
-CF_KEY=2affde1c2638841171d852fd8c60987f57c73
-echo ".jagoanssh.web.id" > /root/domain
+SUB_DOMAIN=${sub}.rosicenter5.my.id
+CF_ID=panwaslublegapilkada@gmail.com
+CF_KEY=c1feca5207e3db081a8d69eae9a5015ec5d4f
+echo ".rosicenter5.my.id" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
 set -euo pipefail
